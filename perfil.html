@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Market | Mi perfil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=4">
+</head>
+<body>
+
+<header class="topbar">
+    <div class="topbar__inner contenedor">
+        <a href="index.html" class="marca">
+            <img src="images/logo/logo.jpg" alt="PC Market" class="marca__logo-img">
+            <span class="marca__nombre">PC<strong>MARKET</strong></span>
+        </a>
+    </div>
+</header>
+
+<main class="login-wrap">
+    <div class="login-card" id="tarjetaPerfil">
+        <p>Cargando...</p>
+    </div>
+</main>
+
+<script>
+(async () => {
+    const tarjeta = document.getElementById("tarjetaPerfil");
+    try {
+        const respuesta = await fetch("api_sesion.php");
+        const sesion = await respuesta.json();
+
+        if (!sesion.logueado) {
+            window.location.href = "login.html";
+            return;
+        }
+
+        const iniciales = (sesion.nombre[0] + sesion.apellido[0]).toUpperCase();
+
+        tarjeta.innerHTML = `
+            <div class="perfil__avatar">${iniciales}</div>
+            <h1>${sesion.nombre} ${sesion.apellido}</h1>
+            <p class="login-card__subtitulo">Esta es tu cuenta de cliente en PC Market.</p>
+            <button id="btnCerrarSesion" class="boton boton--fantasma login-card__boton">Cerrar sesión</button>
+        `;
+
+        document.getElementById("btnCerrarSesion").addEventListener("click", async () => {
+            await fetch("api_logout.php");
+            window.location.href = "index.html";
+        });
+
+    } catch (error) {
+        tarjeta.innerHTML = "<p>No se pudo cargar tu perfil.</p>";
+    }
+})();
+</script>
+
+</body>
+</html>

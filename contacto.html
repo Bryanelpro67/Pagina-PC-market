@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PC Market | Contacto</title>
+
+    <meta name="description"
+          content="Contacta con PC Market para realizar consultas sobre nuestros productos.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css?v=5">
+
+</head>
+
+<body>
+
+
+<!-- ==========================================================
+     BARRA DE NAVEGACIÓN
+========================================================== -->
+
+<header class="topbar">
+
+    <div class="topbar__inner contenedor">
+
+        <a href="inicio.html" class="marca">
+
+            <img src="images/logo/logo.jpg"
+                 alt="PC Market"
+                 class="marca__logo-img">
+
+            <span class="marca__nombre">
+                PC<strong>MARKET</strong>
+            </span>
+
+        </a>
+
+
+        <button class="nav-toggle"
+                id="navToggle"
+                aria-label="Abrir menú"
+                aria-expanded="false">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+
+        <nav class="nav" id="navPrincipal">
+
+            <ul class="nav__lista">
+
+                <li>
+                    <a href="inicio.html"
+                       class="nav__link">
+                        Inicio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html"
+                       class="nav__link">
+                        Catálogo
+                    </a>
+                </li>
+
+                <li>
+                    <a href="categorias.html"
+                       class="nav__link">
+                        Categorías
+                    </a>
+                </li>
+
+                <li>
+                    <a href="como-funciona.html"
+                       class="nav__link">
+                        Cómo funciona
+                    </a>
+                </li>
+
+                <li>
+                    <a href="nosotros.html"
+                       class="nav__link">
+                        Nosotros
+                    </a>
+                </li>
+
+            </ul>
+
+            <a href="contacto.html"
+               class="boton boton--primario nav__cta">
+                Contactarnos
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+
+<!-- ==========================================================
+     ENCABEZADO
+========================================================== -->
+
+<section class="contacto">
+
+    <div class="contenedor">
+
+
+        <div class="seccion__encabezado">
+
+            <p>
+                PC MARKET
+            </p>
+
+            <h1>
+                Contáctanos
+            </h1>
+
+            <p>
+                ¿Tienes alguna pregunta sobre nuestros productos?
+                Estamos aquí para ayudarte.
+            </p>
+
+        </div>
+
+
+        <div class="contacto__grid">
+
+
+            <!-- INFORMACIÓN -->
+
+            <div class="contacto__informacion">
+
+                <h2>
+                    Ponte en contacto
+                </h2>
+
+                <p>
+                    Puedes comunicarte con PC Market para
+                    realizar consultas sobre productos,
+                    disponibilidad o cualquier otra información
+                    relacionada con nuestro catálogo.
+                </p>
+
+
+                <div class="contacto__dato">
+
+                    <h3>
+                        Correo electrónico
+                    </h3>
+
+                    <p>
+                        contacto@pcmarket.com
+                    </p>
+
+                </div>
+
+
+                <div class="contacto__dato">
+
+                    <h3>
+                        Teléfono
+                    </h3>
+
+                    <p>
+                        +503 0000-0000
+                    </p>
+
+                </div>
+
+
+                <div class="contacto__dato">
+
+                    <h3>
+                        Horario de atención
+                    </h3>
+
+                    <p>
+                        Lunes a sábado
+                        <br>
+                        8:00 AM - 5:00 PM
+                    </p>
+
+                </div>
+
+
+                <div class="contacto__dato">
+
+                    <h3>
+                        Ubicación
+                    </h3>
+
+                    <p>
+                        San Salvador, El Salvador
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- FORMULARIO -->
+
+            <div class="contacto__formulario">
+
+                <h2>
+                    Envíanos un mensaje
+                </h2>
+
+                <p>
+                    Completa los siguientes campos
+                    y cuéntanos cómo podemos ayudarte.
+                </p>
+
+
+                <form id="formContacto">
+
+
+                    <label for="nombre">
+                        Nombre
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Tu nombre"
+                        required
+                    >
+
+
+                    <label for="correo">
+                        Correo electrónico
+                    </label>
+
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="tucorreo@email.com"
+                        required
+                    >
+
+
+                    <label for="asunto">
+                        Asunto
+                    </label>
+
+                    <input
+                        type="text"
+                        id="asunto"
+                        name="asunto"
+                        placeholder="Motivo de tu consulta"
+                        required
+                    >
+
+
+                    <label for="mensaje">
+                        Mensaje
+                    </label>
+
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="6"
+                        placeholder="Escribe tu mensaje..."
+                        required
+                    ></textarea>
+
+
+                    <button
+                        type="submit"
+                        class="boton boton--primario">
+
+                        Enviar mensaje
+
+                    </button>
+
+
+                    <p id="mensajeContacto"
+                       class="contacto__mensaje"
+                       hidden>
+                    </p>
+
+
+                </form>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================================
+     AYUDA
+========================================================== -->
+
+<section class="proceso">
+
+    <div class="contenedor">
+
+        <div class="seccion__encabezado">
+
+            <p>
+                ¿NECESITAS AYUDA?
+            </p>
+
+            <h2>
+                También puedes consultar
+            </h2>
+
+            <p>
+                Encuentra información adicional sobre
+                PC Market y nuestros productos.
+            </p>
+
+        </div>
+
+
+        <ol class="proceso__lista">
+
+
+            <li class="proceso__paso">
+
+                <span class="proceso__numero">
+                    1
+                </span>
+
+                <h3>
+                    Ver el catálogo
+                </h3>
+
+                <p>
+                    Revisa todos nuestros productos,
+                    precios y categorías disponibles.
+                </p>
+
+                <br>
+
+                <a href="index.html"
+                   class="boton boton--fantasma">
+                    Ver catálogo
+                </a>
+
+            </li>
+
+
+            <li class="proceso__paso">
+
+                <span class="proceso__numero">
+                    2
+                </span>
+
+                <h3>
+                    Explorar categorías
+                </h3>
+
+                <p>
+                    Encuentra rápidamente los componentes
+                    que necesitas para tu computadora.
+                </p>
+
+                <br>
+
+                <a href="categorias.html"
+                   class="boton boton--fantasma">
+                    Ver categorías
+                </a>
+
+            </li>
+
+
+            <li class="proceso__paso">
+
+                <span class="proceso__numero">
+                    3
+                </span>
+
+                <h3>
+                    Conocer PC Market
+                </h3>
+
+                <p>
+                    Aprende más sobre el proyecto,
+                    su propósito y funcionamiento.
+                </p>
+
+                <br>
+
+                <a href="nosotros.html"
+                   class="boton boton--fantasma">
+                    Conócenos
+                </a>
+
+            </li>
+
+
+        </ol>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- ==========================================================
+     FOOTER
+========================================================== -->
+
+<footer class="pie">
+
+    <div class="contenedor">
+
+        <div class="pie__grid">
+
+
+            <div class="pie__marca">
+
+                <div class="espacio-logo espacio-logo--chico espacio-logo--con-imagen">
+
+                    <img src="images/logo/logo.jpg"
+                         alt="PC Market"
+                         class="pie__logo">
+
+                </div>
+
+                <p>
+                    PC Market es una tienda dedicada a ofrecer
+                    componentes y accesorios para computadora.
+                </p>
+
+            </div>
+
+
+            <div class="pie__columna">
+
+                <h4>
+                    Navegación
+                </h4>
+
+                <ul>
+
+                    <li>
+                        <a href="inicio.html">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html">
+                            Catálogo
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="categorias.html">
+                            Categorías
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="pie__columna">
+
+                <h4>
+                    Información
+                </h4>
+
+                <ul>
+
+                    <li>
+                        <a href="como-funciona.html">
+                            Cómo funciona
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="nosotros.html">
+                            Nosotros
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contacto.html">
+                            Contacto
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="pie__columna">
+
+                <h4>
+                    Contacto
+                </h4>
+
+                <ul>
+
+                    <li>
+                        San Salvador
+                    </li>
+
+                    <li>
+                        El Salvador
+                    </li>
+
+                    <li>
+                        contacto@pcmarket.com
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="pie__linea">
+
+            © 2026 PC Market. Todos los derechos reservados.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+
+<script>
+
+document.getElementById("formContacto").addEventListener("submit", function(evento) {
+
+    evento.preventDefault();
+
+    const mensaje = document.getElementById("mensajeContacto");
+
+    mensaje.textContent =
+        "Gracias por contactarnos. Tu mensaje ha sido recibido.";
+
+    mensaje.hidden = false;
+
+    this.reset();
+
+});
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PC Market | Catálogo de productos</title>
+
+    <meta name="description" content="PC Market - Catálogo de componentes y accesorios de computadora.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- =========================
+     NAVEGACIÓN
+========================= -->
+
+<header class="topbar">
+    <div class="topbar__inner contenedor">
+
+        <a href="index.html" class="marca">
+            <img src="images/logo/logo.jpg" alt="PC Market" class="marca__logo-img">
+            <span class="marca__nombre">PC<strong>MARKET</strong></span>
+        </a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navPrincipal">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav" id="navPrincipal">
+            <ul class="nav__lista">
+                <li><a href="index.html" class="nav__link activo">Catálogo</a></li>
+                <li><a href="inicio.html" class="nav__link">Inicio</a></li>
+                <li><a href="categorias.html" class="nav__link">Categorías</a></li>
+                <li><a href="como-funciona.html" class="nav__link">Cómo funciona</a></li>
+                <li><a href="nosotros.html" class="nav__link">Nosotros</a></li>
+                <li><a href="contacto.html" class="nav__link">Contacto</a></li>
+            </ul>
+
+            <a href="contacto.html" class="boton boton--primario nav__cta">Contactar</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+<!-- =========================
+     ENCABEZADO DEL CATÁLOGO
+========================= -->
+
+<section class="catalogo">
+    <div class="contenedor">
+
+        <div class="catalogo__encabezado">
+            <div>
+                <p class="catalogo__rotulo">PC MARKET</p>
+                <h1>Catálogo de productos</h1>
+                <p>Encuentra componentes y accesorios para armar, mejorar o complementar tu computadora.</p>
+            </div>
+
+            <div class="catalogo__busqueda">
+                <input type="text" id="buscador" placeholder="Buscar producto..." aria-label="Buscar producto">
+            </div>
+        </div>
+
+
+        <!-- CATEGORÍAS RÁPIDAS -->
+
+        <div class="filtros">
+            <button class="filtro activo" data-categoria="todos">Todos</button>
+            <button class="filtro" data-categoria="procesadores">Procesadores</button>
+            <button class="filtro" data-categoria="graficas">Tarjetas gráficas</button>
+            <button class="filtro" data-categoria="ram">Memorias RAM</button>
+            <button class="filtro" data-categoria="almacenamiento">Almacenamiento</button>
+            <button class="filtro" data-categoria="perifericos">Periféricos</button>
+            <button class="filtro" data-categoria="gabinetes">Gabinetes</button>
+        </div>
+
+
+        <!-- =========================
+             PRODUCTOS
+        ========================= -->
+
+        <div class="productos-grid" id="productosGrid">
+
+            <!-- PRODUCTO 1 -->
+            <article class="producto" data-categoria="procesadores">
+                <div class="producto__imagen">
+                    <span class="producto__etiqueta">Procesador</span>
+                    <img src="images/productos/procesadores/ryzen-5-5600.jpg" alt="AMD Ryzen 5 5600" loading="lazy">
+                </div>
+                <div class="producto__contenido">
+                    <p class="producto__marca">AMD</p>
+                    <h2>Ryzen 5 5600</h2>
+                    <p class="producto__descripcion">Procesador de 6 núcleos y 12 hilos, ideal para equipos gaming y productividad.</p>
+                    <div class="producto__abajo">
+                        <strong class="producto__precio">$139.99</strong>
+                        <span class="producto__stock">Disponible</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 2 -->
+            <article class="producto" data-categoria="procesadores">
+                <div class="producto__imagen">
+                    <span class="producto__etiqueta">Procesador</span>
+                    <img src="images/productos/procesadores/ryzen-7-5700x.jpg" alt="AMD Ryzen 7 5700X" loading="lazy">
+                </div>
+                <div class="producto__contenido">
+                    <p class="producto__marca">AMD</p>
+                    <h2>Ryzen 7 5700X</h2>
+                    <p class="producto__descripcion">Procesador de 8 núcleos y 16 hilos para juegos, edición y multitarea.</p>
+                    <div class="producto__abajo">
+                        <strong class="producto__precio">$189.99</strong>
+                        <span class="producto__stock">Disponible</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 3 -->
+            <article class="producto" data-categoria="procesadores">
+                <div class="producto__imagen">
+                    <span class="producto__etiqueta">Procesador</span>
+                    <img src="images/productos/procesadores/ryzen-5-7600.jpg" alt="AMD Ryzen 5 7600" loading="lazy">
+                </div>
+                <div class="producto__contenido">
+                    <p class="producto__marca">AMD</p>
+                    <h2>Ryzen 5 7600</h2>
+                    <p class="producto__descripcion">Procesador de 6 núcleos con socket AM5, compatible con memoria DDR5.</p>
+                    <div class="producto__abajo">
+                        <strong class="producto__precio">$229.99</strong>
+                        <span class="producto__stock">Disponible</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 4 -->
+            <article class="producto" data-categoria="procesadores">
+                <div class="producto__imagen">
+                    <span class="producto__etiqueta">Procesador</span>
+                    <img src="images/productos/procesadores/intel-i5-12400f.jpg" alt="Intel Core i5-12400F" loading="lazy">
+                </div>
+                <div class="producto__contenido">
+                    <p class="producto__marca">Intel</p>
+                    <h2>Core i5-12400F</h2>
+                    <p class="producto__descripcion">Procesador de 6 núcleos y 12 hilos, requiere tarjeta gráfica dedicada.</p>
+                    <div class="producto__abajo">
+                        <strong class="producto__precio">$149.99</strong>
+                        <span class="producto__stock">Disponible</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 5 -->
+            <article class="producto" data-categoria="procesadores">
+                <div class="producto__imagen">
+                    <span class="producto__etiqueta">Procesador</span>
+                    <img src="images/productos/procesadores/intel-i7-13700k.jpg" alt="Intel Core i7-13700K" loading="lazy">
+                </div>
+                <div class="producto__contenido">
+                    <p class="producto__marca">Intel</p>
+                    <h2>Core i7-13700K</h2>
+                    <p class="producto__descripcion">Procesador de 16 núcleos y 24 hilos para gaming exigente y creación de contenido.</p>
+                    <div class="producto__abajo">
+                        <strong class="producto__precio">$379.99</strong>
+                        <span class="producto__stock">Disponible</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 6 -->
+            <article class="producto" data-categoria="graficas">
+                <div class="producto__imagen">
+                    <span class="producto__etiqueta">Gráfica</span>
+                    <img src="images/productos/tarjetas-graficas/rtx-4060-msi.jpg" alt="MSI GeForce RTX 4060 8GB" loading="lazy">
+                </div>
+                <div class="producto__contenido">
+                    <p class="producto__marca">NVIDIA / MSI</p>
+                    <h2>GeForce RTX 4060 8GB</h2>
+                    <p class="producto__descripcion">Tarjeta gráfica con 8 GB GDDR6 para gaming y aplicaciones gráficas.</p>
+                    <div class="producto__abajo">
+                        <strong class="producto__precio">$319.99</strong>
+                        <span class="producto__stock">Disponible</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 7 -->
+            <article class="producto" data-categoria="graficas">
+                <div class="producto__imagen">
+                    <span class="producto__etiqueta">Gráfica</span>
+                    <img src="images/productos/tarjetas-graficas/rtx-4070-super.jpg" alt="NVIDIA GeForce RTX 4070 Super" loading="lazy">
+                </div>
+                <div class="producto__contenido">
+                    <p class="producto__marca">NVIDIA</p>
+                    <h2>GeForce RTX 4070 Super</h2>
+                    <p class="producto__descripcion">Tarjeta gráfica con 12 GB GDDR6X para jugar en alta resolución.</p>
+                    <div class="producto__abajo">
+                        <strong class="producto__precio">$609.99</strong>
+                        <span class="producto__stock">Disponible</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 8 -->
+            <article class="producto" data-categoria="graficas">
+                <div class="producto__imagen">
+                    <span class="producto__etiqueta">Gráfica</span>
+                    <img src="images/productos/tarjetas-graficas/radeon-rx-7600.jpg" alt="AMD Radeon RX 7600" loading="lazy">
+                </div>
+                <div class="producto__contenido">
+                    <p class="producto__marca">AMD</p>
+                    <h2>Radeon RX 7600 8GB</h2>
+                    <p class="producto__descripcion">Tarjeta gráfica con 8 GB GDDR6, buena opción para 1080p.</p>
+                    <div class="producto__abajo">
+                        <strong class="producto__precio">$259.99</strong>
+                        <span class="producto__stock">Disponible</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 9 -->
+            <article class="producto" data-categoria="graficas">
+                <div class="producto__imagen">
+                    <span class="producto__etiqueta">Gráfica</span>
+                    <img src="images/productos/tarjetas-graficas/radeon-rx-7800-xt.jpg" alt="AMD Radeon RX 7800 XT" loading="lazy">
+                </div>
+                <div class="producto__contenido">
+                    <p class="producto__marca">AMD</p>
+                    <h2>Radeon RX 7800 XT 16GB</h2>
+                    <p class="producto__descripcion">Tarjeta gráfica con 16 GB GDDR6 para gaming en 1440p.</p>
+                    <div class="producto__abajo">
+                        <strong class="producto__precio">$499.99</strong>
+                        <span class="producto__stock">Disponible</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 10 -->
+            <article class="producto" data-categoria="graficas">
+                <div class="producto__imagen">
+                    <span class="producto__etiqueta">Gráfica</span>
+                    <img src="images/productos/tarjetas-graficas/gtx-1650.jpg" alt="NVIDIA GeForce GTX 1650" loading="lazy">
+                </div>
+                <div class="producto__contenido">
+                    <p class="producto__marca">NVIDIA</p>
+                    <h2>GeForce GTX 1650 4GB</h2>
+                    <p class="producto__descripcion">Tarjeta gráfica de entrada con 4 GB GDDR6 para equipos básicos.</p>
+                    <div class="producto__abajo">
+                        <strong class="producto__precio">$159.99</strong>
+                        <span class="producto__stock">Disponible</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 11 -->
+            <article class="producto" data-categoria="ram">
+                <div class="producto__imagen">
+                    <span class="producto__etiqueta">Memoria</span>
+                    <img src="images/productos/memorias-ram/corsair-vengeance-16gb.jpg" alt="Corsair Vengeance LPX 16GB" loading="lazy">
+                </div>
+                <div class="producto__contenido">
+                    <p class="producto__marca">Corsair</p>
+                    <h2>Vengeance LPX 16GB DDR4</h2>
+                    <p class="producto__descripcion">Memoria RAM DDR4 de 16 GB a 3200 MHz.</p>
+                    <div class="producto__abajo">
+                        <strong class="producto__precio">$49.99</strong>
+                        <span class="producto__stock">Disponible</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 12 -->
+            <article class="producto" data-categoria="ram">
+                <div class="producto__imagen">
+                    <span class="producto__etiqueta">Memoria</span>
+                    <img src="images/productos/memorias-ram/kingston-fury-16gb.jpg" alt="Kingston Fury Beast 16GB" loading="lazy">
+                </div>
+                <div class="producto__contenido">
+                    <p class="producto__marca">Kingston</p>
+                    <h2>Fury Beast 16GB DDR4</h2>
+                    <p class="producto__descripcion">Memoria RAM DDR4 de 16 GB a 3200 MHz con disipador.</p>
+                    <div class="producto__abajo">
+                        <strong class="producto__precio">$44.99</strong>
+                        <span class="producto__stock">Disponible</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 13 -->
+            <article class="producto" data-categoria="ram">
+                <div class="producto__imagen">
+                    <span class="producto__etiqueta">Memoria</span>
+                    <img src="images/productos/memorias-ram/corsair-ddr5-32gb.jpg" alt="Corsair Vengeance 32GB DDR5" loading="lazy">
+                </div>
+                <div class="producto__contenido">
+                    <p class="producto__marca">Corsair</p>
+                    <h2>Vengeance 32GB DDR5</h2>
+                    <p class="producto__descripcion">Kit de memoria DDR5 de 32 GB (2 x 16 GB) para plataformas nuevas.</p>
+                    <div class="producto__abajo">
+                        <strong class="producto__precio">$109.99</strong>
+                        <span class="producto__stock">Disponible</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 14 -->
+            <article class="producto" data-categoria="ram">
+                <div class="producto__imagen">
+                    <span class="producto__etiqueta">Memoria</span>
+                    <img src="images/productos/memorias-ram/gskill-ripjaws-16gb.jpg" alt="G.Skill Ripjaws V 16GB" loading="lazy">
+                </div>
+                <div class="producto__contenido">
+                    <p class="producto__marca">G.Skill</p>
+                    <h2>Ripjaws V 16GB DDR4</h2>
+                    <p class="producto__descripcion">Memoria RAM DDR4 de 16 GB a 3200 MHz, perfil bajo.</p>
+                    <div class="producto__abajo">
+                        <strong class="producto__precio">$46.99</strong>
+                        <span class="producto__stock">Disponible</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 15 -->
+            <article class="producto" data-categoria="ram">
+                <div class="producto__imagen">
+                    <span class="producto__etiqueta">Memoria</span>
+                    <img src="images/productos/memorias-ram/teamgroup-delta-16gb.jpg" alt="TeamGroup T-Force Delta RGB 16GB" loading="lazy">
+                </div>
+                <div class="producto__contenido">
+                    <p class="producto__marca">TeamGroup</p>
+                    <h2>T-Force Delta RGB 16GB</h2>
+                    <p class="producto__descripcion">Memoria RAM DDR4 de 16 GB con iluminación RGB.</p>
+                    <div class="producto__abajo">
+                        <strong class="producto__precio">$54.99</strong>
+                        <span class="producto__stock">Disponible</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 16 -->
+            <article class="producto" data-categoria="almacenamiento">
+                <div class="producto__imagen">
+                    <span class="producto__etiqueta">SSD</span>
+                    <img src="images/productos/almacenamiento/wd-sn580-1tb.jpg" alt="WD Blue SN580 1TB" loading="lazy">
+                </div>
+                <div class="producto__contenido">
+                    <p class="producto__marca">Western Digital</p>
+                    <h2>WD Blue SN580 1TB</h2>
+                    <p class="producto__descripcion">SSD NVMe M.2 de 1 TB, ideal para mejorar el rendimiento.</p>
+                    <div class="producto__abajo">
+                        <strong class="producto__precio">$74.99</strong>
+                        <span class="producto__stock">Disponible</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 17 -->
+            <article class="producto" data-categoria="almacenamiento">
+                <div class="producto__imagen">
+                    <span class="producto__etiqueta">SSD</span>
+                    <img src="images/productos/almacenamiento/wd-sn580-2tb.jpg" alt="WD Blue SN580 2TB" loading="lazy">
+                </div>
+                <div class="producto__contenido">
+                    <p class="producto__marca">Western Digital</p>
+                    <h2>WD Blue SN580 2TB</h2>
+                    <p class="producto__descripcion">Unidad SSD NVMe de 2 TB para almacenamiento de alto rendimiento.</p>
+                    <div class="producto__abajo">
+                        <strong class="producto__precio">$119.99</strong>
+                        <span class="producto__stock">Disponible</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 18 -->
+            <article class="producto" data-categoria="almacenamiento">
+                <div class="producto__imagen">
+                    <span class="producto__etiqueta">SSD</span>
+                    <img src="images/productos/almacenamiento/kingston-nv2-500gb.jpg" alt="Kingston NV2 500GB" loading="lazy">
+                </div>
+                <div class="producto__contenido">
+                    <p class="producto__marca">Kingston</p>
+                    <h2>NV2 500GB</h2>
+                    <p class="producto__descripcion">SSD NVMe M.2 de 500 GB, económico y rápido.</p>
+                    <div class="producto__abajo">
+                        <strong class="producto__precio">$34.99</strong>
+                        <span class="producto__stock">Disponible</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 19 -->
+            <article class="producto" data-categoria="almacenamiento">
+                <div class="producto__imagen">
+                    <span class="producto__etiqueta">SSD</span>
+                    <img src="images/productos/almacenamiento/samsung-980-1tb.jpg" alt="Samsung 980 1TB" loading="lazy">
+                </div>
+                <div class="producto__contenido">
+                    <p class="producto__marca">Samsung</p>
+                    <h2>980 1TB</h2>
+                    <p class="producto__descripcion">SSD NVMe M.2 de 1 TB con rendimiento confiable.</p>
+                    <div class="producto__abajo">
+                        <strong class="producto__precio">$79.99</strong>
+                        <span class="producto__stock">Disponible</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 20 -->
+            <article class="producto" data-categoria="almacenamiento">
+                <div class="producto__imagen">
+                    <span class="producto__etiqueta">HDD</span>
+                    <img src="images/productos/almacenamiento/seagate-barracuda-2tb.jpg" alt="Seagate Barracuda 2TB" loading="lazy">
+                </div>
+                <div class="producto__contenido">
+                    <p class="producto__marca">Seagate</p>
+                    <h2>Barracuda 2TB</h2>
+                    <p class="producto__descripcion">Disco duro de 2 TB a 7200 RPM para guardar muchos archivos.</p>
+                    <div class="producto__abajo">
+                        <strong class="producto__precio">$59.99</strong>
+                        <span class="producto__stock">Disponible</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 21 -->
+            <article class="producto" data-categoria="perifericos">
+                <div class="producto__imagen">
+                    <span class="producto__etiqueta">Mouse</span>
+                    <img src="images/productos/perifericos/logitech-g203.jpg" alt="Logitech G203" loading="lazy">
+                </div>
+                <div class="producto__contenido">
+                    <p class="producto__marca">Logitech</p>
+                    <h2>Mouse Gamer RGB G203</h2>
+                    <p class="producto__descripcion">Mouse gaming con iluminación RGB y botones programables.</p>
+                    <div class="producto__abajo">
+                        <strong class="producto__precio">$29.99</strong>
+                        <span class="producto__stock">Disponible</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 22 -->
+            <article class="producto" data-categoria="perifericos">
+                <div class="producto__imagen">
+                    <span class="producto__etiqueta">Teclado</span>
+                    <img src="images/productos/perifericos/teclado-mecanico-rgb.jpg" alt="Teclado mecánico RGB" loading="lazy">
+                </div>
+                <div class="producto__contenido">
+                    <p class="producto__marca">PC Market</p>
+                    <h2>Teclado Mecánico Gamer RGB</h2>
+                    <p class="producto__descripcion">Teclado mecánico compacto con iluminación RGB.</p>
+                    <div class="producto__abajo">
+                        <strong class="producto__precio">$44.99</strong>
+                        <span class="producto__stock">Disponible</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 23 -->
+            <article class="producto" data-categoria="perifericos">
+                <div class="producto__imagen">
+                    <span class="producto__etiqueta">Audífonos</span>
+                    <img src="images/productos/perifericos/hyperx-cloud-stinger.jpg" alt="HyperX Cloud Stinger" loading="lazy">
+                </div>
+                <div class="producto__contenido">
+                    <p class="producto__marca">HyperX</p>
+                    <h2>Audífonos Gamer con Micrófono</h2>
+                    <p class="producto__descripcion">Audífonos gaming ligeros con micrófono giratorio.</p>
+                    <div class="producto__abajo">
+                        <strong class="producto__precio">$49.99</strong>
+                        <span class="producto__stock">Disponible</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 24 -->
+            <article class="producto" data-categoria="perifericos">
+                <div class="producto__imagen">
+                    <span class="producto__etiqueta">Webcam</span>
+                    <img src="images/productos/perifericos/logitech-c920.jpg" alt="Logitech C920" loading="lazy">
+                </div>
+                <div class="producto__contenido">
+                    <p class="producto__marca">Logitech</p>
+                    <h2>Cámara Web Full HD C920</h2>
+                    <p class="producto__descripcion">Cámara web Full HD 1080p con micrófono integrado.</p>
+                    <div class="producto__abajo">
+                        <strong class="producto__precio">$69.99</strong>
+                        <span class="producto__stock">Disponible</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 25 -->
+            <article class="producto" data-categoria="perifericos">
+                <div class="producto__imagen">
+                    <span class="producto__etiqueta">Mousepad</span>
+                    <img src="images/productos/perifericos/mousepad-gaming.jpg" alt="Mousepad gaming grande" loading="lazy">
+                </div>
+                <div class="producto__contenido">
+                    <p class="producto__marca">PC Market</p>
+                    <h2>Mousepad Gamer Grande</h2>
+                    <p class="producto__descripcion">Superficie amplia con base antideslizante para mouse y teclado.</p>
+                    <div class="producto__abajo">
+                        <strong class="producto__precio">$14.99</strong>
+                        <span class="producto__stock">Disponible</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 26 -->
+            <article class="producto" data-categoria="gabinetes">
+                <div class="producto__imagen">
+                    <span class="producto__etiqueta">Gabinete</span>
+                    <img src="images/productos/gabinetes/gabinete-gaming-atx.jpg" alt="Gabinete gaming ATX" loading="lazy">
+                </div>
+                <div class="producto__contenido">
+                    <p class="producto__marca">PC Market</p>
+                     <h2>Gabinete Gamer ATX con Panel Lateral</h2>
+                    <p class="producto__descripcion">Gabinete ATX con panel lateral y espacio para ventiladores.</p>
+                    <div class="producto__abajo">
+                        <strong class="producto__precio">$69.99</strong>
+                        <span class="producto__stock">Disponible</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 27 -->
+            <article class="producto" data-categoria="gabinetes">
+                <div class="producto__imagen">
+                    <span class="producto__etiqueta">Gabinete</span>
+                    <img src="images/productos/gabinetes/coolermaster-q300l.jpg" alt="Cooler Master MasterBox Q300L" loading="lazy">
+                </div>
+                <div class="producto__contenido">
+                    <p class="producto__marca">Cooler Master</p>
+                    <h2>Gabinete Compacto Micro-ATX Q300L</h2>
+                    <p class="producto__descripcion">Gabinete Micro-ATX compacto con filtros de polvo.</p>
+                    <div class="producto__abajo">
+                        <strong class="producto__precio">$59.99</strong>
+                        <span class="producto__stock">Disponible</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 28 -->
+            <article class="producto" data-categoria="gabinetes">
+                <div class="producto__imagen">
+                    <span class="producto__etiqueta">Gabinete</span>
+                    <img src="images/productos/gabinetes/nzxt-h510.jpg" alt="NZXT H510" loading="lazy">
+                </div>
+                <div class="producto__contenido">
+                    <p class="producto__marca">NZXT</p>
+                     <h2>Gabinete ATX con Vidrio Templado H510</h2>
+                    <p class="producto__descripcion">Gabinete ATX de diseño limpio con panel de vidrio templado.</p>
+                    <div class="producto__abajo">
+                        <strong class="producto__precio">$79.99</strong>
+                        <span class="producto__stock">Disponible</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 29 -->
+            <article class="producto" data-categoria="gabinetes">
+                <div class="producto__imagen">
+                    <span class="producto__etiqueta">Gabinete</span>
+                    <img src="images/productos/gabinetes/corsair-4000d.jpg" alt="Corsair 4000D Airflow" loading="lazy">
+                </div>
+                <div class="producto__contenido">
+                    <p class="producto__marca">Corsair</p>
+                    <h2>Gabinete ATX con Malla 4000D</h2>
+                    <p class="producto__descripcion">Gabinete ATX con frente de malla para excelente flujo de aire.</p>
+                    <div class="producto__abajo">
+                        <strong class="producto__precio">$104.99</strong>
+                        <span class="producto__stock">Disponible</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 30 -->
+            <article class="producto" data-categoria="gabinetes">
+                <div class="producto__imagen">
+                    <span class="producto__etiqueta">Gabinete</span>
+                    <img src="images/productos/gabinetes/antec-nx200.jpg" alt="Antec NX200" loading="lazy">
+                </div>
+                <div class="producto__contenido">
+                    <p class="producto__marca">Antec</p>
+                    <h2>Gabinete ATX Económico NX200</h2>
+                    <p class="producto__descripcion">Gabinete ATX económico con frente y panel lateral acrílico.</p>
+                    <div class="producto__abajo">
+                        <strong class="producto__precio">$54.99</strong>
+                        <span class="producto__stock">Disponible</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+
+        <p id="sinResultados" class="sin-resultados" hidden>
+            No encontramos productos con esa búsqueda.
+        </p>
+
+    </div>
+</section>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="pie">
+
+    <div class="contenedor pie__grid">
+
+        <div class="pie__marca">
+            <img src="images/logo/logo.jpg" alt="PC Market" class="pie__logo">
+            <p>Componentes y accesorios de computadora.</p>
+        </div>
+
+        <div class="pie__columna">
+            <h4>Catálogo</h4>
+            <ul>
+                <li><a href="index.html">Productos</a></li>
+                <li><a href="categorias.html">Categorías</a></li>
+            </ul>
+        </div>
+
+        <div class="pie__columna">
+            <h4>PC Market</h4>
+            <ul>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="como-funciona.html">Cómo funciona</a></li>
+            </ul>
+        </div>
+
+        <div class="pie__columna">
+            <h4>Contacto</h4>
+            <ul>
+                <li>San Salvador, El Salvador</li>
+                <li>+503 0000-0000</li>
+                <li>pcmarket@email.com</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="contenedor pie__linea">
+        <p>© 2026 PC Market. Proyecto académico — INFRAMEN.</p>
+    </div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Market | Inicio</title>
+    <meta name="description" content="PC Market - Componentes, periféricos y accesorios para tu computadora.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=5">
+</head>
+<body>
+
+<header class="topbar">
+    <div class="topbar__inner contenedor">
+        <a href="index.html" class="marca">
+            <img src="images/logo/logo.jpg" alt="PC Market" class="marca__logo-img">
+            <span class="marca__nombre">PC<strong>MARKET</strong></span>
+        </a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navPrincipal">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav" id="navPrincipal">
+            <ul class="nav__lista">
+                <li><a href="index.html" class="nav__link">Catálogo</a></li>
+                <li><a href="inicio.html" class="nav__link activo">Inicio</a></li>
+                <li><a href="categorias.html" class="nav__link">Categorías</a></li>
+                <li><a href="como-funciona.html" class="nav__link">Cómo funciona</a></li>
+                <li><a href="nosotros.html" class="nav__link">Nosotros</a></li>
+                <li><a href="contacto.html" class="nav__link">Contacto</a></li>
+            </ul>
+            <a href="contacto.html" class="boton boton--primario nav__cta">Contactar</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <!-- HERO: qué vendemos, en una frase y con imágenes -->
+    <section class="hero">
+        <div class="hero__fondo"></div>
+        <div class="contenedor hero__inner">
+
+            <div class="hero__texto">
+                <p class="hero__rotulo">COMPONENTES Y ACCESORIOS PARA PC</p>
+                <h1 class="hero__titulo">Arma, mejora o actualiza tu PC.</h1>
+                <p class="hero__descripcion">
+                    Procesadores, tarjetas gráficas, memorias RAM, almacenamiento,
+                    periféricos y gabinetes, con precio y disponibilidad a la vista.
+                </p>
+                <div class="hero__acciones">
+                    <a href="index.html" class="boton boton--claro">Ver catálogo</a>
+                    <a href="contacto.html" class="boton boton--fantasma">Consultar un producto</a>
+                </div>
+                <div class="confianza">
+                    <span>✔ Precios visibles</span>
+                    <span>✔ Stock indicado</span>
+                    <span>✔ Atención en San Salvador</span>
+                </div>
+            </div>
+
+            <div class="hero__panel">
+                <div class="hero__galeria">
+                    <figure><img src="images/productos/procesadores/ryzen-5-5600.jpg" alt="AMD Ryzen 5 5600"></figure>
+                    <figure><img src="images/productos/tarjetas-graficas/rtx-4060-msi.jpg" alt="MSI GeForce RTX 4060"></figure>
+                    <figure><img src="images/productos/memorias-ram/corsair-vengeance-16gb.jpg" alt="Corsair Vengeance 16GB"></figure>
+                    <figure><img src="images/productos/almacenamiento/wd-sn580-1tb.jpg" alt="WD Blue SN580 1TB"></figure>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BENEFICIOS -->
+    <section class="contenedor valores">
+        <article class="valores__item">
+            <span class="valores__icono">📦</span>
+            <h3>Variedad</h3>
+            <p>Más de 30 productos en 6 categorías para armar tu equipo completo.</p>
+        </article>
+        <article class="valores__item">
+            <span class="valores__icono">🔎</span>
+            <h3>Fácil de buscar</h3>
+            <p>Busca por nombre, marca o categoría. No importan mayúsculas ni tildes.</p>
+        </article>
+        <article class="valores__item">
+            <span class="valores__icono">⚡</span>
+            <h3>Rendimiento</h3>
+            <p>Productos pensados para mejorar la velocidad y la experiencia de tu PC.</p>
+        </article>
+    </section>
+
+    <!-- CATEGORÍAS CON IMAGEN -->
+    <section class="categorias contenedor">
+        <div class="seccion__encabezado">
+            <h2>Nuestras categorías</h2>
+            <p>Elige una y encuentra lo que necesitas.</p>
+        </div>
+        <div class="categorias__grid">
+            <a href="index.html" class="categoria"><img class="categoria__img" src="images/productos/procesadores/ryzen-7-5700x.jpg" alt=""><span class="categoria__nombre">Procesadores</span></a>
+            <a href="index.html" class="categoria"><img class="categoria__img" src="images/productos/tarjetas-graficas/rtx-4070-super.jpg" alt=""><span class="categoria__nombre">Tarjetas gráficas</span></a>
+            <a href="index.html" class="categoria"><img class="categoria__img" src="images/productos/memorias-ram/kingston-fury-16gb.jpg" alt=""><span class="categoria__nombre">Memorias RAM</span></a>
+            <a href="index.html" class="categoria"><img class="categoria__img" src="images/productos/almacenamiento/samsung-980-1tb.jpg" alt=""><span class="categoria__nombre">Almacenamiento</span></a>
+            <a href="index.html" class="categoria"><img class="categoria__img" src="images/productos/perifericos/logitech-g203.jpg" alt=""><span class="categoria__nombre">Periféricos</span></a>
+            <a href="index.html" class="categoria"><img class="categoria__img" src="images/productos/gabinetes/corsair-4000d.jpg" alt=""><span class="categoria__nombre">Gabinetes</span></a>
+        </div>
+    </section>
+
+    <!-- LLAMADA A LA ACCIÓN -->
+    <section class="cta-final">
+        <div class="contenedor cta-final__inner">
+            <div>
+                <h2>¿Ya sabes qué necesitas?</h2>
+                <p>Revisa el catálogo o escríbenos y te ayudamos a elegir.</p>
+            </div>
+            <a href="index.html" class="boton boton--claro">Ver productos</a>
+        </div>
+    </section>
+
+</main>
+
+<footer class="pie">
+    <div class="contenedor pie__grid">
+        <div class="pie__marca">
+            <img src="images/logo/logo.jpg" alt="PC Market" class="pie__logo">
+            <p>Componentes y accesorios de computadora.</p>
+        </div>
+        <div class="pie__columna">
+            <h4>Catálogo</h4>
+            <ul>
+                <li><a href="index.html">Productos</a></li>
+                <li><a href="categorias.html">Categorías</a></li>
+            </ul>
+        </div>
+        <div class="pie__columna">
+            <h4>PC Market</h4>
+            <ul>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="como-funciona.html">Cómo funciona</a></li>
+            </ul>
+        </div>
+        <div class="pie__columna">
+            <h4>Contacto</h4>
+            <ul>
+                <li>San Salvador, El Salvador</li>
+                <li>+503 0000-0000</li>
+                <li>pcmarket@email.com</li>
+            </ul>
+        </div>
+    </div>
+    <div class="contenedor pie__linea">
+        <p>© 2026 PC Market. Proyecto académico — INFRAMEN.</p>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
