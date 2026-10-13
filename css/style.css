@@ -385,64 +385,9 @@ ul, ol{ margin: 0; padding: 0; }
   .producto__descripcion{ display: block; min-height: 0; }
   .marca__nombre{ font-size: 1rem; }
 }
-/* ==========================================================
-   CARRITO + ESLOGAN (pegar AL FINAL de css/style.css)
-   ========================================================== */
 
-/* ---------- Botón del carrito en el menú ---------- */
-.carrito-btn{ position: relative; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; margin-left: 16px; border: 1px solid var(--linea); border-radius: 50%; background: #fff; font-size: 1.15rem; cursor: pointer; transition: border-color .15s, transform .15s; }
-.carrito-btn:hover{ border-color: var(--azul); transform: translateY(-2px); }
-.carrito-btn__cont{ position: absolute; top: -6px; right: -6px; min-width: 20px; height: 20px; padding: 0 5px; display: grid; place-items: center; border-radius: 999px; background: var(--azul); color: #fff; font: 700 .72rem var(--fuente-texto); }
-.carrito-btn__cont.vacio{ background: #94A3B8; }
-
-/* ---------- Botón "Agregar" y selector de orden ---------- */
-.producto__agregar{ width: 100%; margin-top: 14px; padding: 11px 16px; font-size: .88rem; }
+/* ---------- Selector de orden y eslogan ---------- */
 .catalogo__busqueda{ display: flex; flex-direction: column; gap: 10px; }
 .catalogo__busqueda select{ width: 100%; padding: 12px 14px; border: 1px solid #C5CEE0; border-radius: 12px; background: #fff; color: var(--texto); font: .9rem var(--fuente-texto); cursor: pointer; }
-
-/* ---------- Panel lateral ---------- */
-.sin-scroll{ overflow: hidden; }
-.carrito-fondo{ position: fixed; inset: 0; z-index: 90; background: rgba(8,18,47,.55); opacity: 0; pointer-events: none; transition: opacity .25s; }
-.carrito-fondo.abierto{ opacity: 1; pointer-events: auto; }
-.carrito{ position: fixed; top: 0; right: 0; bottom: 0; z-index: 100; width: min(420px, 100%); display: flex; flex-direction: column; background: #fff; box-shadow: -20px 0 40px -20px rgba(8,18,47,.5); transform: translateX(100%); transition: transform .3s ease; }
-.carrito.abierto{ transform: none; }
-.carrito__cabeza{ display: flex; align-items: center; justify-content: space-between; padding: 20px 22px; border-bottom: 1px solid var(--linea); }
-.carrito__cabeza h2{ margin: 0; font-size: 1.2rem; }
-.carrito__cerrar{ width: 38px; height: 38px; border: 0; border-radius: 50%; background: var(--fondo); color: var(--texto); font-size: 1rem; cursor: pointer; }
-.carrito__cerrar:hover{ background: var(--fondo-2); }
-.carrito__lista{ flex: 1; overflow-y: auto; padding: 8px 22px; }
-.carrito__vacio{ margin-top: 60px; text-align: center; color: var(--texto-suave); }
-
-.item{ display: grid; grid-template-columns: 64px 1fr auto; gap: 14px; align-items: center; padding: 16px 0; border-bottom: 1px solid var(--linea); }
-.item img{ width: 64px; height: 64px; padding: 4px; object-fit: contain; border: 1px solid var(--linea); border-radius: 10px; background: #fff; mix-blend-mode: multiply; }
-.item__info{ display: grid; gap: 4px; font-size: .88rem; }
-.item__info strong{ color: var(--marino); line-height: 1.3; }
-.item__info span{ color: var(--texto-suave); }
-.item__cant{ display: inline-flex; align-items: center; gap: 10px; margin-top: 4px; }
-.item__cant button{ width: 28px; height: 28px; border: 1px solid #C5CEE0; border-radius: 8px; background: #fff; color: var(--texto); font-size: 1rem; cursor: pointer; }
-.item__cant button:hover{ border-color: var(--azul); color: var(--azul); }
-.item__lado{ display: grid; gap: 8px; justify-items: end; font-size: .92rem; color: var(--marino); }
-.item__quitar{ border: 0; background: none; color: #B42318; font: 600 .78rem var(--fuente-texto); cursor: pointer; }
-.item__quitar:hover{ text-decoration: underline; }
-
-.carrito__pie{ display: grid; gap: 10px; padding: 20px 22px; border-top: 1px solid var(--linea); background: var(--fondo); }
-.carrito__total{ display: flex; justify-content: space-between; align-items: baseline; color: var(--texto); }
-.carrito__total strong{ color: var(--marino); font: 800 1.5rem var(--fuente-titulo); }
-.carrito__vaciar{ border: 0; background: none; color: var(--texto-suave); font: 600 .85rem var(--fuente-texto); cursor: pointer; }
-.carrito__vaciar:hover{ color: #B42318; }
-.carrito__ok{ margin-top: 40px; text-align: center; color: var(--texto-suave); }
-.carrito__ok-icono{ width: 64px; height: 64px; margin: 0 auto 16px; display: grid; place-items: center; border-radius: 50%; background: var(--verde-fondo); color: var(--verde); font-size: 1.8rem; font-weight: 800; }
-.carrito__ok ul{ list-style: none; margin-top: 16px; font-size: .9rem; }
-
-/* ---------- Aviso al agregar ---------- */
-.toast{ position: fixed; left: 50%; bottom: 28px; z-index: 120; max-width: calc(100% - 32px); padding: 12px 20px; border-radius: 999px; background: var(--marino); color: #fff; font-size: .9rem; font-weight: 600; box-shadow: 0 16px 30px -14px rgba(8,18,47,.7); transform: translate(-50%, 24px); opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s; }
-.toast.visible{ opacity: 1; transform: translate(-50%, 0); }
-
-/* ---------- Eslogan ---------- */
 .slogan{ padding: 10px 0; background: linear-gradient(90deg, var(--marino-900), var(--azul)); color: #fff; text-align: center; font-size: .9rem; font-weight: 600; letter-spacing: .02em; }
 .slogan strong{ color: var(--acento); }
-
-@media (max-width: 760px){
-  .carrito-btn{ order: 2; margin-left: auto; margin-right: 8px; }
-  .nav-toggle{ order: 3; }
-}
