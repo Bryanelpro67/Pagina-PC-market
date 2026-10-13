@@ -1,0 +1,9 @@
+PC MARKET - Página informativa
+===============================
+Solo HTML, CSS y JavaScript: no usa PHP ni base de datos.
+Sube todo el contenido de esta carpeta a tu hosting (carpeta htdocs) y abre index.html.
+
+Si antes habías subido la versión con carrito, borra del hosting estos archivos que ya no se usan:
+api_comprar.php, api_login.php, api_logout.php, api_pedidos.php, api_registro.php,
+api_sesion.php, db.php, diagnostico.php, factura.php, login.html, registro.html, perfil.html
+Y borra también la carpeta sql/ (la base de datos ya no hace falta).
